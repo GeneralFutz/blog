@@ -1,0 +1,53 @@
+.admin {
+  --padding: 0.75rem 1rem;
+}
+.admin a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+.admin ul {
+  list-style: none;
+  padding-left: 0;
+}
+.admin .admin-menu-item {
+  margin: 0 -1rem;
+}
+.admin .admin-menu-item :hover {
+  background-color: deeppink;
+}
+.admin .admin-menu-item div {
+  padding: 0.5rem 1rem;
+}
+.admin #admin-toolbar {
+  padding: 0 1rem;
+}
+.admin #admin-sidebar {
+  color: var(--bs-light);
+  background-color: var(--bs-dark);
+  min-height: 100vh;
+  float: left;
+  width: 160px;
+  position: fixed;
+  padding: var(--padding);
+  display: none;
+}
+.admin #admin-sidebar.open {
+  display: block;
+}
+@media (min-width: 768px) {
+  .admin #admin-sidebar {
+    display: block;
+    position: relative;
+  }
+  .admin #admin-sidebar:not(.open) {
+    display: none;
+  }
+}
+.admin #admin-main {
+  color: #303030;
+  background-color: #e0e0e0;
+  padding: var(--padding);
+  flex-basis: 100%;
+}
+
+/*# sourceMappingURL=admin.css.map */
