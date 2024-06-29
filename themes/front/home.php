@@ -1,4 +1,4 @@
-<?= $this->extend('front/index') ?>
+<?= $this->extend('layout') ?>
 
 <?= $this->section('page_styles') ?><!-- Linked styles, inline CSS --><?= $this->endSection() ?>
 
@@ -13,7 +13,7 @@ Home
 <?php
 /** <!-- The Front Page --> */
 ?>
-
+<img src="<?= asset('front/img/Firefly.png', 'img') ?>" alt="">
 <?= $this->endSection() ?>
 
 <?= $this->section('page_scripts') ?><?= $this->endSection() ?>

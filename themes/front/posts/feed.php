@@ -1,4 +1,4 @@
-<?= $this->extend('front/index') ?>
+<?= $this->extend('layout') ?>
 
 <?= $this->section('page_styles') ?><!-- Linked styles, inline CSS --><?= $this->endSection() ?>
 

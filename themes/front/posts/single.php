@@ -1,4 +1,4 @@
-<?= $this->extend('front/index') ?>
+<?= $this->extend('layout') ?>
 
 <?= $this->section('page_styles') ?><!-- Linked styles, inline CSS --><?= $this->endSection() ?>
 
@@ -13,7 +13,7 @@
 
 if ($post) {
     //echo '<h2>' . $post->title . '</h2><br>';
-    echo '<div>' . $post->content . '</div><br><hr><br>';
+    echo '<div>' . $post->content . '</div>';
 }
 
 ?>

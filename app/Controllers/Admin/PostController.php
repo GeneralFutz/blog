@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Admin;
 
-use App\Controllers\BaseController;
+use Varyona\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\PostModel;
 
@@ -10,13 +10,15 @@ class PostController extends BaseController
 {
     protected $helpers = ['form'];
 
+    protected $theme = 'admin';
+
     public function list()
     {
         $model = model('PostModel');
 
         $data['posts'] = $model->orderBy('updated_at', 'DESC')->findAll();
 
-        return view('admin/posts/list', $data);
+        return $this->render('posts/list', $data);
     }
 
     public function create()
@@ -28,7 +30,7 @@ class PostController extends BaseController
         // you need to use if (strtolower($this->request->getMethod()) !== 'post').
         if (!$this->request->is('post')) {
 
-            return view('admin/posts/create');
+            return $this->render('posts/create');
         }
 
         // Checks whether the submitted data passed the validation rules.
@@ -85,7 +87,7 @@ class PostController extends BaseController
             return redirect()->to('/admin/posts'); // redirect if post not found
         }
 
-        return view('admin/posts/create', ['post' => $post]); // reusing the create view for edit
+        return $this->render('posts/create', ['post' => $post]); // reusing the create view for edit
     }
 
     public function update($id)

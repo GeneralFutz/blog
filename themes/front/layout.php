@@ -1,8 +1,7 @@
-<?= $this->include('front/_header') ?>
+<?= $this->include('_header') ?>
 
 <div class="container-md">
     <div class="row">
-        <h1><?= $this->renderSection('page_title') ?></h1>
         <?= $this->renderSection('content') ?>
     </div>
 </div>

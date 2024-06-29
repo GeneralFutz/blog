@@ -1,4 +1,4 @@
-<?= $this->extend('admin/index') ?>
+<?= $this->extend('index') ?>
 
 <?= $this->section('header_scripts') ?>
 <!-- DataTables -->

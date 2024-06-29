@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $this->renderSection('page_title', true) ?></title>
 
-    <?php /* Page Styles */  ?>
+    <?php /* Page Styles */ ?>
     <link rel="stylesheet" href="<?= base_url('assets/css/theme.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/prism/prism.css') ?>">
 

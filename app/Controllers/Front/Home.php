@@ -2,12 +2,15 @@
 
 namespace App\Controllers\Front;
 
-use App\Controllers\BaseController;
+use Varyona\Controllers\BaseController;
 
 class Home extends BaseController
 {
+    //public $theme = 'admin';
+
     public function index(): string
     {
-        return view('front/home');
+        $data = [];
+        return $this->render('home', $data);
     }
 }

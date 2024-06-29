@@ -1,12 +1,12 @@
-<?= $this->include('admin/_header') ?>
+<?= $this->include('_header') ?>
 
 <div class="d-flex">
     <div id="admin-sidebar" class="">
         <div class="heading">DASHBOARD</div>
         <ul id="admin-menu">
             <li class="admin-menu-item">
-                <a href="#">
-                    <div>Users</div>
+                <a href="<?= base_url('admin/posts') ?>">
+                    <div>Posts</div>
                 </a>
             </li>
             <li class="admin-menu-item">
